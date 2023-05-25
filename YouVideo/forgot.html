@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>YouVideo - Streaming Website Template</title>
+    <link href="assets/bootstrap-4/dist/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="assets/swiper/swiper.min.css" rel="stylesheet" />
+    <link href="assets/owl/owl.carousel.min.css" rel="stylesheet" />
+    <link href="assets/owl/owl.theme.default.min.css" rel="stylesheet" />
+    <link href="assets/poper/css/popper.css" rel="stylesheet" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/meanmenu.min.css" rel="stylesheet" />
+    <link href="css/linear-icon.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.css" />
+    <link href="assets/font-awesome/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link href="css/responsive.css" rel="stylesheet" />
+  </head>
+
+  <body>
+    <div class="wrapper">
+      <div class="container">
+        <div class="login-area">
+          <div class="login-page">
+            <div class="login-img">
+              <img src="images/forgot.png" class="img-fluid" alt="" />
+            </div>
+            <div class="login-form">
+              <h3 class="font-weight-bold">Forgot Password</h3>
+              <h6>Filling next input field get reset password link on your email.</h6>
+              <form class="mt-4">
+                <div class="form-group">
+                  <label for="exampleInputEmail1">Enter Email address</label>
+                  <input type="email" class="form-control" id="exampleInputEmail1" placeholder="Enter email" />
+                </div>
+
+                <a href="index.html" class="btn btn-rounded btn-primary btn-sm mt-4">Send Mail</a>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/jquery/jquery-3.2.1.min.js"></script>
+    <script src="js/jquery.meanmenu.min.js"></script>
+    <script src="assets/bootstrap-4/dist/js/bootstrap.min.js"></script>
+    <script src="assets/owl/owl.carousel.min.js"></script>
+    <script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
+    <script src="assets/swiper/swiper.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+      var swiper = new Swiper(".swiper-container", {
+        pagination: {
+          el: ".swiper-pagination",
+          dynamicBullets: true,
+        },
+      });
+    </script>
+    <script>
+      jQuery(document).ready(function () {
+        jQuery(".mobile-menu").meanmenu();
+      });
+    </script>
+  </body>
+</html>
