@@ -43,6 +43,8 @@
                 button
                     display: none
 @media (max-width: 767px)
+    .title
+        font-size: 28px
     .promo
         &__header 
             font-size: 30px  
@@ -59,7 +61,14 @@
             margin: 0  
         &__icon 
             margin-top: 50px  
-@media (max-width: 425px)
+    .item-wrap__img
+        margin-right: 0px
+        display: flex
+        justify-content: center
+        align-items: start
+        img
+            width: 70%
+@media (max-width: 424px)
     .promo
         &__header 
             font-size: 20px
@@ -73,10 +82,32 @@
         &__icons
             justify-content: space-around
     .advantage
-        .title
-            font-size: 25px
         &_icon
             margin-top: 40px
         &__subtitle, &__descr
             margin-top: 10px
+    .catalog
+        &__tab
+            width: 120px
+            font-size: 13px
+    .title
+        font-size: 25px
+    .reviews
+        &__items
+            flex-direction: column
+            &:nth-child(2)            
+                margin-top: 40px
+        &__wrapper
+            padding: 0 15px
+            width: auto
+            display: flex
+            flex-direction: column
+            align-items: center
+        &__descr
+            text-align: center
+    .item-wrap__img
+        margin-bottom: 20px
+        img
+            width: 40%
+    
         
