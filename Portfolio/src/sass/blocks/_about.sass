@@ -1,0 +1,54 @@
+.about
+    min-height: 840px
+    &__block
+        display: flex
+        justify-content: space-between
+        padding: 120px 100px 120px 0
+    &__title
+        margin-top: 6px
+    &__subtitle
+        padding-left: 10px
+        position: relative
+        z-index: 2
+        @include before_circle
+    &__devier
+        width: 60px
+        height: 3px
+        background-color: $main-color
+        margin-top: 4px
+    &__descr
+        color: #000
+        font-size: 14px
+        font-weight: 500
+        margin-top: 20px
+    &__item
+        &:nth-child(1)
+            width: 400px
+            height: 600px
+        &:nth-child(2)
+            width: 572px
+    &__image
+        width: 100%
+    &__carts
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+    &__cart
+        margin-top: 40px
+        display: flex
+        width: 260px
+        align-items: start
+        &-image
+            padding: 15px 20px 0 15px
+        &-item
+            font-size: 12px
+            font-weight: 500
+            margin-top: 6px
+    &__wrapper
+        display: flex
+        flex-direction: column
+        width: 200px
+    &__circle
+            position: relative
+            z-index: 2
+            @include before_circle
