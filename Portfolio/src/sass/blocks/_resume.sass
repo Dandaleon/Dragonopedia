@@ -1,0 +1,19 @@
+.resume
+    padding-top: 120px
+    &__title
+        position: relative
+        text-align: center
+        @include before_circle
+        &::before
+            left: 48.5%
+            top: 50%
+            transform: translateX(-50%)
+            transform: translateY(-50%)
+    &__subtitle
+        text-align: center
+        margin-top: 6px
+    &__devider
+        width: 60px
+        height: 3px
+        background-color: $main-color
+        margin: 25px auto 0

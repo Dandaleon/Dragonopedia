@@ -1,17 +1,11 @@
-window.addEventListener("DOMContentLoaded", () => {
-  const menu = document.querySelector(".menu"),
-    menuItem = document.querySelectorAll(".menu-item"),
-    hamburger = document.querySelector(".hamburger");
+const hamburger = document.querySelector(".hamburger"),
+  menu = document.querySelector(".menu"),
+  closeElem = document.querySelector(".menu__close");
 
-  hamburger.addEventListener("click", () => {
-    hamburger.classList.toggle("hamburger-active");
-    menu.classList.toggle("menu-active");
-  });
+hamburger.addEventListener("click", () => {
+  menu.classList.add("active");
+});
 
-  menuItem.forEach((item) => {
-    item.addEventListener("click", () => {
-      hamburger.classList.toggle("hamburger-active");
-      menu.classList.toggle("menu-active");
-    });
-  });
+closeElem.addEventListener("click", () => {
+  menu.classList.remove("active");
 });
