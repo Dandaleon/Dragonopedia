@@ -2,21 +2,27 @@
     color: #000
     font-size: 36px
     font-style: normal
-    font-weight: 500
+    font-weight: 700
     line-height: 60px
     &_fz48
         font-size: 48px
-        font-weight: 700
     &_fz20
         font-size: 20px
         line-height: 30px
-        font-weight: 700
     &_fz16
         font-size: 16px
         line-height: 24px
-        font-weight: 700
     &_fz14
         font-size: 14px
         line-height: 21px
-        font-weight: 700
+    &__section-title
+        text-align: center
+        position: relative
+        @include before_circle
+        &::before
+            left: 48.5%
+            top: 50%
+            transform: translateY(-50%)
+    &__section-subtitle
+        text-align: center
 
