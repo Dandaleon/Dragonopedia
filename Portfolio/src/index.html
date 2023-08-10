@@ -186,7 +186,7 @@
       </div>
     </section>
 
-    <section class="resume">
+    <!-- <section class="resume">
       <div class="container">
         <h2 class="title title_fz16 title__section-title">Досвід</h2>
         <div class="title title__section-subtitle resume__subtitle">Чим я буду корисний</div>
@@ -264,9 +264,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="skills">
+    <!-- <section class="skills">
       <div class="container">
         <h2 class="title title_fz16 title__section-title">Навички</h2>
         <div class="title title__section-subtitle skills__subtitle">Що я використовую у роботі</div>
@@ -357,9 +357,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="portfolio">
+    <!-- <section class="portfolio">
       <div class="container">
         <h2 class="title title_fz16 title__section-title">Портфоліо</h2>
         <div class="title title__section-subtitle portfolio__subtitle">Мої роботи</div>
@@ -373,9 +373,9 @@
           <a href="#" class="portfolio__item horizontal"><img src="img/works/mac.jpg" alt="mac" /></a>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="price">
+    <!-- <section class="price">
       <div class="container">
         <div class="title title_fz16 title__section-title">Прайс-лист</div>
         <div class="devider price__devider"></div>
@@ -405,9 +405,9 @@
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
-    <section class="contacts">
+    <!-- <section class="contacts">
       <div class="container">
         <div class="contacts__wrapper">
           <div class="contacts__photo">
@@ -430,31 +430,35 @@
               </a>
             </div>
             <div class="contacts__item-text">Або залиште ваші дані і я сам вам напишу:</div>
-            <form action="#" class="contacts__form">
+            <form id="contacts-form" action="#" class="contacts__form">
               <div class="contacts__input">
-                <input required name="name" id="name" type="text" />
+                <input name="name" id="name" type="text" />
                 <label for="name">Ваше ім'я</label>
               </div>
               <div class="contacts__input">
-                <input required name="email" id="email" type="email" />
+                <input name="email" id="email" type="email" />
                 <label for="email">Ваша пошта</label>
               </div>
               <div class="contacts__textarea">
-                <textarea required name="text" id="text"></textarea>
+                <textarea name="textarea" name="text" id="text"></textarea>
                 <label for="text">Ваше повідомлення</label>
               </div>
               <div class="contacts__triggers">
                 <button type="submit" class="btn contacts__btn">Надіслати повідомлення</button>
                 <div class="contacts__policy">
-                  <input required type="checkbox" /><span>Я погоджуюсь з <a href="/policy.html">політикою конфіденційності</a></span>
+                  <input type="checkbox" name="agree" id="agree" />
+                  <label for="agree">Я погоджуюсь з <a href="/policy.html">політикою конфіденційності</a></label>
                 </div>
               </div>
             </form>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
 
+    <script src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/jquery.validate.min.js"></script>
     <script src="js/script.js"></script>
   </body>
 </html>

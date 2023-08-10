@@ -1,4 +1,97 @@
+@media (max-width: 1400px)
+    .sidepanel
+            display: none
+
 @media (max-width: 1200px)
-@media (max-width: 991px)  
-@media (max-width: 767px)
-@media (max-width: 575px)
+    .container
+        max-width: 960px
+    .about
+        &__wrapper
+            grid-template-columns: 400px 520px
+            column-gap: 50px
+        &__skills
+            grid-template: repeat(2,minmax(115px,auto))/repeat(2,250px)
+            column-gap: 20px
+            &-item
+                column-gap: 10px
+                grid-template-columns: 40px 195px
+@media (max-width: 992px) 
+    .container
+        max-width: 720px 
+    .title
+        &_fz36
+            font-size: 30px
+    .about
+        &__wrapper 
+            grid-template-columns: 300px 380px
+            column-gap: 40px
+            row-gap: 20px
+        &__skills
+            grid-template: repeat(3,minmax(85px,auto))/repeat(1,auto)
+            row-gap: 15px
+            &-item
+                grid-template-columns: 40px auto
+            
+@media (max-width: 768px)
+    .container
+        max-width: 540px
+    .title
+        &_fz48
+            font-size: 28px
+    .promo
+        &__title
+            line-height: 39px
+            width: 300px
+    .about
+        padding-top: 40px
+        &__photo
+            grid-row: 1/2
+        &__wrapper
+            grid-template: 400px auto auto / 1fr
+        &__title
+            padding: 0
+            text-align: center
+            &::before
+                left: calc( 50% - 20px )
+                transform: translateX(-50%)
+                top: 50%
+                transform: translateY(-50%)
+        &__subtitle
+            font-size: 24px
+            text-align: center
+        .devider
+            margin: 0 auto
+        &__skills
+            grid-template: repeat(2,minmax(115px,auto))/repeat(2,250px)
+            column-gap: 20px
+            &-item
+                column-gap: 10px
+                grid-template-columns: 40px 195px
+@media (max-width: 576px)
+    .container
+        width: 100%
+        padding: 0 10px
+    .title
+        &_fz48
+            font-size: 26px
+    .promo
+        background: url("../img/main_bg.jpg") 57%/cover no-repeat
+        &__btns
+            margin-top: 32px
+        .hamburger
+            right: 20px
+    .menu
+        width: 250px
+        &__block
+            padding-top: 110px
+        &__list
+            padding-left: 20px
+        &__link
+            &:hover
+                margin-left: 15px
+    .about
+        &__skills
+            grid-template: repeat(3,minmax(85px,auto))/repeat(1,auto)
+            row-gap: 15px
+            &-item
+                grid-template-columns: 40px auto
