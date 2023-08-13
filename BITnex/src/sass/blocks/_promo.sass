@@ -1,0 +1,45 @@
+.promo
+    min-height: 464px
+    background: url('../img/promo/shutterstock.jpg') center center/cover no-repeat
+    &__wrapper
+        display: inline-flex
+        padding: 96px 448px 81.8px 57px
+        flex-direction: column
+    &__title
+        position: relative
+        &::before
+            content: ''
+            position: absolute
+            width: 43px
+            height: 43px
+            background: url('../icons/home/logo.svg') center center/cover no-repeat
+            left: -39px
+            top: 50%
+            transform: translateY(-50%)
+    &__subtitle
+        margin-top: 15.6px
+    &__text
+        color: #A6A6B0
+        font-family: Inter
+        font-size: 22.4px
+        font-style: normal
+        font-weight: 400
+        line-height: 36.4px
+        margin-top: 15px
+    &__link
+        text-decoration: none
+        color: #000
+        font-family: Inter
+        font-size: 16px
+        font-weight: 400
+        line-height: 26px
+        width: 133px
+        height: 64px
+        padding: 18px 51.3px 20px 52.7px
+        border-radius: 8px
+        margin-top: 15.4px
+        background: $main-color-green
+.logo
+    padding-left: 39px
+    width: 132px
+    height: 27px
