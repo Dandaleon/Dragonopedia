@@ -7,7 +7,16 @@
     <title>BITnex</title>
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
-  <body>
+  <body class="body-blur">
+    <section class="backgrounds backgrounds-main">
+      <div class="backgrounds-main__ellipse"></div>
+      <div class="backgrounds-main__ellipse"></div>
+      <div class="backgrounds-main__ellipse"></div>
+      <div class="backgrounds-main__ellipse"></div>
+      <div class="backgrounds-main__ellipse"></div>
+      <div class="backgrounds-main__ellipse"></div>
+    </section>
+
     <header class="header">
       <div class="container">
         <div class="header__wrapper">
@@ -23,10 +32,10 @@
                 </svg>
               </div>
               <ul class="header__menu">
-                <li><a href="#" class="header__link">Markets</a></li>
+                <li><a href="Markets.html" class="header__link">Markets</a></li>
                 <li><a href="#" class="header__link header__link-list">Trading</a></li>
-                <li><a href="#" class="header__link">Futures</a></li>
-                <li><a href="#" class="header__link">Codes</a></li>
+                <li><a href="Futures.html" class="header__link">Futures</a></li>
+                <li><a href="Codes.html" class="header__link">Codes</a></li>
               </ul>
             </div>
             <div class="header__items">
@@ -41,7 +50,7 @@
                 </svg>
                 <ul class="header__menu header__menu-second">
                   <li><a href="#" class="header__link header__connect">Connect wallet</a></li>
-                  <li><a href="#" class="header__link">Login</a></li>
+                  <li><a href="Login.html" class="header__link">Login</a></li>
                   <li>
                     <a href="#" class="header__link"><button class="btn header__btn">Registration</button></a>
                   </li>
@@ -402,46 +411,151 @@
       </div>
     </section>
 
+    <section class="lending">
+      <div class="container">
+        <div class="lending__wrapper">
+          <div class="lending__row">
+            <h2 class="title title-fz40 lending__title">Crypto lending</h2>
+            <div class="lending__text">Move to a new level of investment and enjoy passive income</div>
+            <div class="main-smarts">
+              <div class="main-smarts__points">
+                <div class="main-smarts__point">
+                  <div class="main-smarts__point-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="42" height="34" viewBox="0 0 42 34" fill="none">
+                      <path
+                        d="M37.8 34H4.2C3.08609 34 2.0178 33.5522 1.23015 32.7552C0.442499 31.9582 0 30.8772 0 29.75V4.25C0 1.9125 1.89 0 4.2 0H37.8C38.9139 0 39.9822 0.447766 40.7698 1.2448C41.5575 2.04183 42 3.12283 42 4.25V29.75C42 30.8772 41.5575 31.9582 40.7698 32.7552C39.9822 33.5522 38.9139 34 37.8 34ZM4.2 4.25V29.75H37.8V4.25H4.2ZM28.35 25.5C26.9576 25.5 25.6223 24.9403 24.6377 23.944C23.6531 22.9477 23.1 21.5965 23.1 20.1875C23.1 18.7785 23.6531 17.4273 24.6377 16.431C25.6223 15.4347 26.9576 14.875 28.35 14.875C29.7424 14.875 31.0777 15.4347 32.0623 16.431C33.0469 17.4273 33.6 18.7785 33.6 20.1875C33.6 21.5965 33.0469 22.9477 32.0623 23.944C31.0777 24.9403 29.7424 25.5 28.35 25.5ZM19.95 25.5C19.1155 25.5045 18.292 25.3075 17.5477 24.9256C16.8034 24.5437 16.1599 23.9877 15.6704 23.3038C15.1808 22.6199 14.8595 21.8277 14.733 20.993C14.6065 20.1584 14.6784 19.3052 14.9428 18.5042C15.2072 17.7033 15.6565 16.9777 16.2535 16.3876C16.8504 15.7975 17.5777 15.3598 18.3752 15.111C19.1726 14.8621 20.0172 14.8092 20.8389 14.9567C21.6606 15.1041 22.4357 15.4476 23.1 15.9588C22.4484 16.4491 21.9191 17.0869 21.5545 17.8212C21.1898 18.5554 20.9999 19.3658 20.9999 20.1875C20.9999 21.0092 21.1898 21.8196 21.5545 22.5538C21.9191 23.2881 22.4484 23.9259 23.1 24.4163C22.197 25.1175 21.084 25.4788 19.95 25.5Z"
+                        fill="#07070B"
+                      />
+                    </svg>
+                  </div>
+                  <span></span>
+                  <div class="main-smarts__point-text">Deposit funds to the Main Balance</div>
+                </div>
+                <div class="main-smarts__point">
+                  <div class="main-smarts__point-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="37" height="29" viewBox="0 0 37 29" fill="none">
+                      <path
+                        d="M11.1 29C9.45723 29.0028 7.8602 28.47 6.56059 27.4855C5.26099 26.501 4.33269 25.1209 3.922 23.5625H0V19.9375H3.9405C4.28657 18.6243 5.00166 17.4326 6.0045 16.4977C7.00735 15.5628 8.25774 14.9223 9.6136 14.6489C10.9695 14.3754 12.3764 14.4801 13.6746 14.9509C14.9728 15.4218 16.1101 16.2399 16.9574 17.3124C17.8047 18.3849 18.328 19.6688 18.4677 21.0181C18.6075 22.3674 18.3581 23.728 17.748 24.9454C17.1379 26.1628 16.1915 27.1881 15.0163 27.9048C13.8411 28.6216 12.4843 29.001 11.1 29ZM11.1 18.125C10.3755 18.1257 9.66708 18.3348 9.06275 18.7264C8.45841 19.118 7.98472 19.6748 7.70044 20.3277C7.41616 20.9806 7.33381 21.701 7.46359 22.3993C7.59338 23.0977 7.9296 23.7434 8.43053 24.2562C8.93146 24.7691 9.57506 25.1266 10.2815 25.2843C10.9879 25.4421 11.7261 25.3932 12.4044 25.1436C13.0827 24.8941 13.6713 24.455 14.0971 23.8807C14.523 23.3064 14.7674 22.6223 14.8 21.9131V22.6381V21.75C14.8 20.7886 14.4102 19.8666 13.7163 19.1867C13.0224 18.5069 12.0813 18.125 11.1 18.125ZM37 23.5625H20.35V19.9375H37V23.5625ZM20.35 14.5C18.7104 14.4988 17.1176 13.9641 15.8218 12.98C14.5259 11.9958 13.6004 10.6179 13.1905 9.0625H0V5.4375H13.1905C13.5366 4.12434 14.2517 2.93261 15.2545 1.99773C16.2573 1.06285 17.5077 0.422305 18.8636 0.148875C20.2195 -0.124554 21.6264 -0.019901 22.9246 0.450943C24.2228 0.921786 25.3601 1.73994 26.2074 2.81244C27.0547 3.88494 27.578 5.16877 27.7177 6.51807C27.8575 7.86736 27.6081 9.22801 26.998 10.4454C26.3879 11.6628 25.4415 12.6881 24.2663 13.4048C23.0911 14.1216 21.7343 14.501 20.35 14.5ZM20.35 3.625C19.6255 3.62572 18.9171 3.83484 18.3127 4.22641C17.7084 4.61798 17.2347 5.17477 16.9504 5.8277C16.6662 6.48063 16.5838 7.20097 16.7136 7.89934C16.8434 8.59771 17.1796 9.24338 17.6805 9.75625C18.1815 10.2691 18.8251 10.6266 19.5315 10.7843C20.2379 10.9421 20.9761 10.8932 21.6544 10.6437C22.3327 10.3941 22.9213 9.95498 23.3471 9.38069C23.773 8.80641 24.0174 8.12226 24.05 7.41312V8.13812V7.25C24.05 6.28859 23.6602 5.36656 22.9663 4.68674C22.2724 4.00692 21.3313 3.625 20.35 3.625ZM37 9.0625H29.6V5.4375H37V9.0625Z"
+                        fill="#07070B"
+                      />
+                    </svg>
+                  </div>
+                  <span></span>
+                  <div class="main-smarts__point-text">Choose one of the plans</div>
+                </div>
+                <div class="main-smarts__point">
+                  <div class="main-smarts__point-img">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="34" height="34" viewBox="0 0 34 34" fill="none">
+                      <path
+                        d="M34 34H1.88889C1.38792 34 0.907478 33.801 0.553243 33.4468C0.199007 33.0925 0 32.6121 0 32.1111V0H3.77778V30.2222H34V34ZM10.1433 24.5556L7.55556 22.0244L16.7356 13.0333C17.0837 12.6997 17.5472 12.5134 18.0294 12.5134C18.5116 12.5134 18.9752 12.6997 19.3233 13.0333L23.5356 17.1511L31.4122 9.44444L34 11.9756L24.82 20.9667C24.4719 21.3003 24.0083 21.4866 23.5261 21.4866C23.0439 21.4866 22.5804 21.3003 22.2322 20.9667L18.02 16.8489L10.1433 24.5556Z"
+                        fill="#07070B"
+                      />
+                    </svg>
+                  </div>
+                  <span></span>
+                  <div class="main-smarts__point-text">Get up to 30% annual profit</div>
+                </div>
+              </div>
+              <div class="main-smarts__list">
+                <div class="main-smart">
+                  <div class="main-smart__header">
+                    <div class="main-smart__name"><img src="icons/main/bitcoin.png" alt="bitcoin" />Bitcoin</div>
+                    <div class="main-smart__percent">13 %</div>
+                  </div>
+                  <div class="main-smart__days">
+                    <div class="main-smart__day"><span>20</span><span>Days</span></div>
+                    <div class="main-smart__day"><span>30</span><span>Days</span></div>
+                    <div class="main-smart__day"><span>90</span><span>Days</span></div>
+                    <div class="main-smart__day main-smart__day-select"><span>180</span><span>Days</span></div>
+                    <div class="main-smart__day"><span>360</span><span>Days</span></div>
+                  </div>
+                  <a href="#" class="btn btn-paleyellow main-smart__link">Start earning</a>
+                </div>
+                <div class="main-smart">
+                  <div class="main-smart__header">
+                    <div class="main-smart__name"><img src="icons/main/tether.png" alt="tether" />Tether US</div>
+                    <div class="main-smart__percent">30 %</div>
+                  </div>
+                  <div class="main-smart__days">
+                    <div class="main-smart__day"><span>20</span><span>Days</span></div>
+                    <div class="main-smart__day"><span>30</span><span>Days</span></div>
+                    <div class="main-smart__day"><span>90</span><span>Days</span></div>
+                    <div class="main-smart__day"><span>180</span><span>Days</span></div>
+                    <div class="main-smart__day main-smart__day-select"><span>360</span><span>Days</span></div>
+                  </div>
+                  <a href="#" class="btn btn-paleyellow main-smart__link">Start earning</a>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="lending__row">
+            <h2 class="title title-fz40 lending__title">For experienced traders</h2>
+            <div class="lending__text">The path to professional trading on Airtex</div>
+            <div class="features-cols">
+              <div class="features-cols__item">
+                <h3 class="title title-fz18 features-cols__title">Powerful</h3>
+                <span class="features-cols__span">API</span>
+                <div class="features-cols__descr">Customize your personal functionality and get more features</div>
+                <a href="#" class="features-cols__link">Learn</a>
+              </div>
+              <div class="features-cols__item">
+                <h3 class="title title-fz18 features-cols__title">Leverage</h3>
+                <span class="features-cols__span">20x</span>
+                <div class="features-cols__descr">Increase your personal income several times faster</div>
+                <a href="#" class="features-cols__link">Margin trading</a>
+              </div>
+              <div class="features-cols__item">
+                <h3 class="title title-fz18 features-cols__title">Exact</h3>
+                <span class="features-cols__span">AML</span>
+                <div class="features-cols__descr">Make sure that the addresses are not involved in money laundering</div>
+                <a href="#" class="features-cols__link">Check</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <footer class="footer">
       <div class="container">
         <nav>
           <div class="fmenu__column">
             <h5 class="footer__title">Trading</h5>
             <ul class="footer__list">
-              <li><a href="#">Exchange</a></li>
-              <li><a href="#">Spot</a></li>
-              <li><a href="#">P2P</a></li>
-              <li><a href="#">DEX</a></li>
-              <li><a href="#">Futures</a></li>
+              <li><a href="Exchange.html">Exchange</a></li>
+              <li><a href="Spot.html">Spot</a></li>
+              <li><a href="P2P.html">P2P</a></li>
+              <li><a href="DEX.html">DEX</a></li>
+              <li><a href="Futures.html">Futures</a></li>
             </ul>
           </div>
           <div class="fmenu__column">
             <h5 class="footer__title">Products and Services</h5>
             <ul class="footer__list">
-              <li><a href="#">Airtex Earn</a></li>
-              <li><a href="#">Referral program</a></li>
-              <li><a href="#">AML</a></li>
-              <li><a href="#">Token listing</a></li>
+              <li><a href="latorBIT Earn.html">Airtex Earn</a></li>
+              <li><a href="Referral program.html">Referral program</a></li>
+              <li><a href="AML.html">AML</a></li>
+              <li><a href="Token listing.html">Token listing</a></li>
             </ul>
           </div>
           <div class="fmenu__column">
             <h5 class="footer__title">Information</h5>
             <ul class="footer__list">
-              <li><a href="#">About the company</a></li>
-              <li><a href="#">FAQ</a></li>
-              <li><a href="#">Ask a question</a></li>
-              <li><a href="#">Markets</a></li>
-              <li><a href="#">Commissions</a></li>
-              <li><a href="#">System data</a></li>
-              <li><a href="#">Bug Bounty</a></li>
+              <li><a href="About the company.html">About the company</a></li>
+              <li><a href="FAQ.html">FAQ</a></li>
+              <li><a href="Ask a question.html">Ask a question</a></li>
+              <li><a href="Markets.html">Markets</a></li>
+              <li><a href="Commissions.html">Commissions</a></li>
+              <li><a href="System data.html">System data</a></li>
+              <li><a href="Bug Bounty.html">Bug Bounty</a></li>
             </ul>
           </div>
           <div class="fmenu__column">
             <h5 class="footer__title">Documentation</h5>
             <ul class="footer__list">
-              <li><a href="#">Privacy policy</a></li>
-              <li><a href="#">AML Policy</a></li>
-              <li><a href="#">User agreement</a></li>
+              <li><a href="Privacy policy.html">Privacy policy</a></li>
+              <li><a href="AML Policy.html">AML Policy</a></li>
+              <li><a href="User agreement.html">User agreement</a></li>
               <div class="footer__item">
                 <h6>Listing Request</h6>
                 <a href="#">listing@airtex.com</a>
