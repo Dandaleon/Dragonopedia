@@ -170,6 +170,7 @@
     }
   }
   .table {
+    width: 100%;
     display: flex;
     flex-direction: column;
     &__menu {
@@ -243,6 +244,7 @@
       align-items: center;
       border-radius: 8px;
       border: 1px solid #d7dbdf;
+      text-decoration: none;
     }
   }
 }
