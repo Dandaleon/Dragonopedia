@@ -1,0 +1,43 @@
+.pay {
+  min-height: 417px;
+  padding: 63px 0 178px;
+  &__wrapper {
+    padding: 0 108px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__title {
+    width: 767px;
+    text-align: center;
+  }
+  &__block {
+    width: 100%;
+    margin-top: 112px;
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    max-width: 504px;
+    border-radius: 6px;
+    border: 1px solid #fff;
+    background: #000;
+    box-shadow: 0px 4px 30px 0px rgba(0, 0, 0, 0.05);
+    height: 223px;
+    padding: 20px 89px 14px 93px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+  &__name {
+    color: #fff;
+    text-align: center;
+    font-family: Inter;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 28px;
+  }
+}

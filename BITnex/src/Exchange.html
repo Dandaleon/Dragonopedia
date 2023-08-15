@@ -8,11 +8,11 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="body-dark">
-    <!-- <section class="backgrounds backgrounds-markets">
-      <div class="backgrounds-markets__ellipse"></div>
-      <div class="backgrounds-markets__ellipse"></div>
-      <div class="backgrounds-markets__ellipse"></div>
-    </section> -->
+    <section class="backgrounds backgrounds-exchange">
+      <div class="backgrounds-exchange__ellipse"></div>
+      <div class="backgrounds-exchange__ellipse"></div>
+      <div class="backgrounds-exchange__ellipse"></div>
+    </section>
 
     <header class="header">
       <div class="container">
@@ -82,7 +82,7 @@
           <h4 class="title title-fz24 exchange__title">Cryptocurrency Exchange</h4>
           <div class="exchange__subtitle">Cryptocurrency Exchange</div>
           <div class="exchange__box">
-            <div class="exchange-form">
+            <form class="exchange-form">
               <div class="exchange-form__row">
                 <div class="select">
                   <div class="select__label">
@@ -134,7 +134,7 @@
               <div class="exchange-form__row">
                 <div class="input">
                   <div class="input__box">
-                    <input placeholder="1" type="text" />
+                    <input required placeholder="1" type="text" />
                     <div class="input__label">I give it back</div>
                   </div>
                   <div class="input__section">
@@ -161,9 +161,10 @@
                 <div class="exchange-form__col"><span>Current course</span><span>1 BTC ≈ 33 148.46 USDT</span></div>
                 <div class="exchange-form__col"><span>The course in 24 hours.</span><span>0.7%</span></div>
                 <div class="exchange-form__col"><span>Commission</span><span>0%</span></div>
+                gulp
               </div>
-              <div class="exchange-form__button"></div>
-            </div>
+              <button type="submit" class="exchange-form__button">The exchange is only available to users</button>
+            </form>
           </div>
         </div>
       </div>
