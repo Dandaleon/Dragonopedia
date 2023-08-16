@@ -266,4 +266,120 @@
       }
     }
   }
+  &-earn {
+    z-index: 10;
+    filter: blur(200px);
+    &__ellipse {
+      position: absolute;
+      &:nth-child(1) {
+        width: 358px;
+        height: 264.676px;
+        flex-shrink: 0;
+        border-radius: 358px;
+        background: #1500ff;
+        left: 270px;
+        top: 495px;
+      }
+      &:nth-child(2) {
+        width: 353px;
+        height: 306px;
+        flex-shrink: 0;
+        border-radius: 353px;
+        background: #9e00ff;
+        top: 2417px;
+        right: 109px;
+      }
+      &:nth-child(3) {
+        width: 250px;
+        height: 186px;
+        flex-shrink: 0;
+        background-color: #f00;
+        left: 46px;
+        top: 1790px;
+      }
+      &:nth-child(4) {
+        width: 353px;
+        height: 306px;
+        flex-shrink: 0;
+        border-radius: 353px;
+        background: #23b543;
+        right: 22px;
+        top: 374px;
+      }
+    }
+  }
+  &-aml {
+    filter: blur(200px);
+    &__ellipse {
+      position: absolute;
+      &:nth-child(1) {
+        width: 250px;
+        height: 186px;
+        flex-shrink: 0;
+        background-color: #f00;
+        top: 63px;
+        right: 548px;
+      }
+      &:nth-child(2) {
+        width: 353px;
+        height: 306px;
+        flex-shrink: 0;
+        border-radius: 353px;
+        background: #23b543;
+        right: 22px;
+        top: 374px;
+      }
+      &:nth-child(3) {
+        width: 358px;
+        height: 264.676px;
+        flex-shrink: 0;
+        border-radius: 358px;
+        background: #1500ff;
+        left: 85px;
+        top: 467px;
+      }
+    }
+  }
+  &-listing {
+    filter: blur(200px);
+    &__ellipse {
+      position: absolute;
+      &:nth-child(1) {
+        width: 353px;
+        height: 306px;
+        flex-shrink: 0;
+        border-radius: 353px;
+        background: #23b543;
+        right: 22px;
+        top: 374px;
+      }
+      &:nth-child(2) {
+        width: 358px;
+        height: 264.676px;
+        flex-shrink: 0;
+        border-radius: 358px;
+        background: #1500ff;
+        left: 12px;
+        top: 3385px;
+      }
+      &:nth-child(3) {
+        width: 353px;
+        height: 306px;
+        flex-shrink: 0;
+        border-radius: 353px;
+        background: #9e00ff;
+        right: 32px;
+        top: 2607px;
+      }
+      &:nth-child(4) {
+        width: 172px;
+        height: 475px;
+        flex-shrink: 0;
+        border-radius: 475px;
+        background: #f2d082;
+        left: 81px;
+        top: 1124px;
+      }
+    }
+  }
 }

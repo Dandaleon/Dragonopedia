@@ -8,10 +8,10 @@
     <link rel="stylesheet" href="css/style.min.css" />
   </head>
   <body class="body-dark">
-    <section class="backgrounds backgrounds-authorization">
-      <div class="backgrounds-authorization__ellipse"></div>
-      <div class="backgrounds-authorization__ellipse"></div>
-      <div class="backgrounds-authorization__ellipse"></div>
+    <section class="backgrounds backgrounds-aml">
+      <div class="backgrounds-aml__ellipse"></div>
+      <div class="backgrounds-aml__ellipse"></div>
+      <div class="backgrounds-aml__ellipse"></div>
     </section>
 
     <header class="header">
@@ -76,72 +76,42 @@
       </div>
     </header>
 
-    <section class="authorization">
+    <section class="aml">
       <div class="container">
-        <div class="authorization__wrapper">
-          <div class="authorization__check">
-            Please make sure you use the official website
-            <div class="domain-check">
-              <div class="domain-check__icon">
-                <svg xmlns="http://www.w3.org/2000/svg" width="8" height="11" viewBox="0 0 8 11" fill="none">
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M7 3.75H6.5V2.75C6.5 2.08696 6.23661 1.45107 5.76777 0.982233C5.29893 0.513392 4.66304 0.25 4 0.25C3.33696 0.25 2.70107 0.513392 2.23223 0.982233C1.76339 1.45107 1.5 2.08696 1.5 2.75V3.75H1C0.45 3.75 0 4.2 0 4.75V9.75C0 10.3 0.45 10.75 1 10.75H7C7.55 10.75 8 10.3 8 9.75V4.75C8 4.2 7.55 3.75 7 3.75ZM2.5 3.75V2.75C2.5 1.92 3.17 1.25 4 1.25C4.83 1.25 5.5 1.92 5.5 2.75V3.75H2.5Z"
-                    fill="#5F6368"
-                  />
-                </svg>
+        <div class="aml__wrapper">
+          <h3 class="title title-fz32">Anti-money laundering (AML) checks</h3>
+          <div class="aml__text">On this page you can check the address for involvement in money laundering.</div>
+          <div class="aml__block">
+            <div class="aml-form">
+              <div class="aml-form__select">
+                <div class="aml-form__label">Coin for verification</div>
+                <div class="aml-form__arrow">
+                  <svg width="16" height="17" viewBox="0 0 16 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M14.667 4.23L8.00033 10.8967L1.33366 4.23" stroke="#282F38" stroke-width="1.33333" />
+                  </svg>
+                </div>
               </div>
-              <div class="domain-check__text">https://airtex.com</div>
+              <div class="aml-form__input">
+                <div class="aml-form__label">Address</div>
+              </div>
+              <div class="aml-fee">
+                <div class="aml-fee__value">1 USDT</div>
+                <div class="aml-fee__info">
+                  <div class="aml-fee__text">Insufficient funds</div>
+                  <a href="#" class="aml-fee__link">Deposit</a>
+                </div>
+              </div>
+              <button class="aml-form__btn">Check</button>
             </div>
+            <div class="aml__table">
+              <div class="aml__col">Date</div>
+              <div class="aml__col">Coin</div>
+              <div class="aml__col">Address</div>
+              <div class="aml__col">Price</div>
+              <div class="aml__col">Risk scale</div>
+            </div>
+            <button class="aml__btn">The service is temporarily unavailable</button>
           </div>
-          <h2 class="title title-fz40 authorization__title">Login</h2>
-          <div class="authorization__descr">Don't you have an Airtex account? <span>Create an account</span></div>
-          <form action="#" class="authorization__form">
-            <div class="input"><div class="input__label">E-mail</div></div>
-            <div class="input">
-              <div class="input__box"><div class="input__label">Password</div></div>
-              <div class="input__section">
-                <div class="input__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="22" height="17" viewBox="0 0 22 17" fill="none">
-                    <path
-                      d="M21.0005 8.49C18.8005 3.79 15.0005 0.889999 11.0005 0.889999C7.00048 0.889999 3.10048 3.89 1.00048 8.49C0.945414 8.61617 0.916992 8.75234 0.916992 8.89C0.916992 9.02766 0.945414 9.16383 1.00048 9.29C3.20048 13.99 7.00048 16.89 11.0005 16.89C15.0005 16.89 18.9005 13.89 21.0005 9.29C21.0555 9.16383 21.084 9.02766 21.084 8.89C21.084 8.75234 21.0555 8.61617 21.0005 8.49ZM11.0005 14.89C7.80048 14.89 4.80048 12.59 3.10048 8.89C4.80048 5.19 7.80048 2.89 11.0005 2.89C14.2005 2.89 17.2005 5.19 18.9005 8.89C17.2005 12.59 14.2005 14.89 11.0005 14.89ZM11.0005 4.89C9.93961 4.89 8.9222 5.31143 8.17205 6.06157C7.4219 6.81172 7.00048 7.82913 7.00048 8.89C7.00048 9.95087 7.4219 10.9683 8.17205 11.7184C8.9222 12.4686 9.93961 12.89 11.0005 12.89C12.0613 12.89 13.0788 12.4686 13.8289 11.7184C14.5791 10.9683 15.0005 9.95087 15.0005 8.89C15.0005 7.82913 14.5791 6.81172 13.8289 6.06157C13.0788 5.31143 12.0613 4.89 11.0005 4.89ZM11.0005 10.89C10.47 10.89 9.96134 10.6793 9.58626 10.3042C9.21119 9.92914 9.00048 9.42043 9.00048 8.89C9.00048 8.35957 9.21119 7.85086 9.58626 7.47579C9.96134 7.10071 10.47 6.89 11.0005 6.89C11.5309 6.89 12.0396 7.10071 12.4147 7.47579C12.7898 7.85086 13.0005 8.35957 13.0005 8.89C13.0005 9.42043 12.7898 9.92914 12.4147 10.3042C12.0396 10.6793 11.5309 10.89 11.0005 10.89Z"
-                      fill="#7A7A85"
-                    />
-                  </svg>
-                </div>
-              </div>
-            </div>
-            <div class="input-captcha">
-              <div class="input-captcha__wrapper"><img class="input-captcha__checkbox" src="icons/login/Checkbox.svg" alt="Checkbox" /> <span class="input-captcha__text">I'm not a robot</span></div>
-              <div class="input-captcha__icon">
-                <img src="icons/login/reCaptcha.png" alt="reCaptcha" class="input-captcha__img" />
-                <div class="input-captcha__subtitle">reCAPTCHA</div>
-                <div class="input-captcha__rc-anchor-pt">
-                  <a href="#" class="input-captcha__link">Privacy</a>
-                  -
-                  <a href="#" class="input-captcha__link">Terms</a>
-                </div>
-              </div>
-            </div>
-            <button class="btn btn-paleyellow authorization-formbtn">Continue</button>
-            <button class="authorization__btn authorization-formbtn">
-              <span class="authorization__span">
-                <div class="authorization__icon">
-                  <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 20 20" fill="none">
-                    <path
-                      fill-rule="evenodd"
-                      clip-rule="evenodd"
-                      d="M0.526367 4.62822C0.526367 2.60923 2.16309 0.972504 4.18208 0.972504H11.4935C13.5125 0.972504 15.1492 2.60923 15.1492 4.62822V5.1018C17.4545 5.48857 19.2111 7.49349 19.2111 9.9087V14.783C19.2111 17.4749 17.0289 19.6573 14.3368 19.6573H5.40065C2.70866 19.6573 0.526367 17.4749 0.526367 14.783V6.25299V4.62822ZM12.7121 4.62822V5.03442H2.96351V4.62822C2.96351 3.95523 3.50909 3.40965 4.18208 3.40965H11.4935C12.1666 3.40965 12.7121 3.95523 12.7121 4.62822ZM2.96351 14.783V7.47156H13.9307H14.3368C15.6829 7.47156 16.774 8.5627 16.774 9.9087V14.783C16.774 16.129 15.6829 17.2201 14.3368 17.2201H5.40065C4.05466 17.2201 2.96351 16.129 2.96351 14.783ZM11.8997 11.1273C11.2267 11.1273 10.6811 11.6728 10.6811 12.3459C10.6811 13.0189 11.2267 13.5644 11.8997 13.5644H13.9307C14.6037 13.5644 15.1492 13.0189 15.1492 12.3459C15.1492 11.6728 14.6037 11.1273 13.9307 11.1273H11.8997Z"
-                      fill="#096BEC"
-                    />
-                  </svg>
-                </div>
-                Connect wallet</span
-              >
-            </button>
-          </form>
-          <a href="#" class="authorization-link">Forgot your password?</a>
         </div>
       </div>
     </section>
@@ -172,7 +142,7 @@
             <h5 class="footer__title">Information</h5>
             <ul class="footer__list">
               <li><a href="About the company.html">About the company</a></li>
-              <li><a href="FAQ.html">FAQ</a></li>
+              <li><a href="P2P.html#faq">FAQ</a></li>
               <li><a href="Ask a question.html">Ask a question</a></li>
               <li><a href="Markets.html">Markets</a></li>
               <li><a href="Commissions.html">Commissions</a></li>
