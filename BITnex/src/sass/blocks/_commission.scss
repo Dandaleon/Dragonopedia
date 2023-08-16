@@ -21,4 +21,11 @@
     font-weight: 400;
     line-height: 29.25px;
   }
+  &-dex {
+    padding: 34px 0;
+    &__title {
+      text-align: center;
+      width: 806px;
+    }
+  }
 }

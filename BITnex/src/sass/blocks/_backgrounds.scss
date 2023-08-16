@@ -106,8 +106,8 @@
         width: 250px;
         height: 186px;
         flex-shrink: 0;
-        fill: #f00;
-        filter: blur(200px);
+        background-color: #f00;
+        filter: blur(150px);
         right: 526px;
         top: 992px;
       }
@@ -171,6 +171,98 @@
         background: #1500ff;
         left: 10px;
         top: 1664px;
+      }
+    }
+  }
+  &-dex {
+    z-index: 10;
+    &__ellipse {
+      filter: blur(150px);
+      position: absolute;
+      &:nth-child(1) {
+        width: 250px;
+        height: 186px;
+        flex-shrink: 0;
+        background-color: #f00;
+        filter: blur(200px);
+        left: 80px;
+        top: 667px;
+        border-radius: 358px;
+      }
+      &:nth-child(2) {
+        width: 358px;
+        height: 264.676px;
+        flex-shrink: 0;
+        border-radius: 358px;
+        background: #1500ff;
+        filter: blur(200px);
+        left: 10px;
+        top: 1664px;
+      }
+      &:nth-child(3) {
+        width: 172px;
+        height: 475px;
+        flex-shrink: 0;
+        border-radius: 475px;
+        background: #f2d082;
+        filter: blur(200px);
+        right: 15px;
+        top: 166px;
+      }
+      &:nth-child(4) {
+        width: 353px;
+        height: 306px;
+        flex-shrink: 0;
+        border-radius: 353px;
+        background: #9e00ff;
+        filter: blur(200px);
+        right: 109px;
+        top: 2417px;
+      }
+      &:nth-child(5) {
+        width: 353px;
+        height: 306px;
+        flex-shrink: 0;
+        border-radius: 353px;
+        background: #23b543;
+        filter: blur(200px);
+        right: 70px;
+        top: 1339px;
+      }
+    }
+  }
+  &-authorization {
+    z-index: 10;
+    &__ellipse {
+      position: absolute;
+      &:nth-child(1) {
+        width: 172px;
+        height: 475px;
+        flex-shrink: 0;
+        border-radius: 475px;
+        background: #f2d082;
+        filter: blur(200px);
+        left: 51px;
+        top: 168px;
+      }
+      &:nth-child(2) {
+        width: 353px;
+        height: 306px;
+        flex-shrink: 0;
+        border-radius: 353px;
+        background: #9e00ff;
+        filter: blur(200px);
+        right: 611px;
+        top: 729px;
+      }
+      &:nth-child(3) {
+        width: 215px;
+        height: 186px;
+        flex-shrink: 0;
+        background-color: #23b543;
+        filter: blur(200px);
+        right: 129px;
+        top: 305px;
       }
     }
   }
