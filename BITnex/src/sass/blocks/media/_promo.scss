@@ -1,17 +1,4 @@
-@media (max-width: 1400px) {
-  .container {
-    max-width: 1310px;
-  }
-}
-@media (max-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
-}
 @media (max-width: 992px) {
-  .container {
-    max-width: 720px;
-  }
   .promo {
     &__wrapper {
       padding: 96px 0 81.8px;
@@ -19,9 +6,6 @@
   }
 }
 @media (max-width: 768px) {
-  .container {
-    max-width: 540px;
-  }
   .promo {
     &__text {
       font-size: 21px;
@@ -30,10 +14,6 @@
   }
 }
 @media (max-width: 576px) {
-  .container {
-    width: 100%;
-    padding: 0 10px;
-  }
   .promo {
     &__text {
       font-size: 17px;
@@ -48,10 +28,6 @@
   }
 }
 @media (max-width: 350px) {
-  .container {
-    width: 100%;
-    padding: 0 10px;
-  }
   .promo {
     &__text {
       line-height: 25px;

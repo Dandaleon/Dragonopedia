@@ -1,0 +1,25 @@
+@media (max-width: 1400px) {
+}
+@media (max-width: 1200px) {
+}
+@media (max-width: 992px) {
+}
+@media (max-width: 768px) {
+}
+@media (max-width: 576px) {
+  .backgrounds {
+    &-main {
+      &__ellipse {
+        &:nth-child(3) {
+          left: -224px;
+        }
+        &:nth-child(6) {
+          left: -100px;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 350px) {
+}

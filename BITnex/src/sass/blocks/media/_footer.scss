@@ -1,7 +1,4 @@
 @media (max-width: 1400px) {
-  .container {
-    max-width: 1310px;
-  }
   .footer {
     nav {
       justify-content: space-around;
@@ -15,9 +12,6 @@
   }
 }
 @media (max-width: 1200px) {
-  .container {
-    max-width: 960px;
-  }
   .footer {
     nav {
       .fmenu__column {
@@ -31,9 +25,6 @@
   }
 }
 @media (max-width: 992px) {
-  .container {
-    max-width: 720px;
-  }
   .footer {
     nav {
       .fmenu__column {
@@ -46,9 +37,6 @@
   }
 }
 @media (max-width: 768px) {
-  .container {
-    max-width: 540px;
-  }
   .footer {
     nav {
       .fmenu__column {
@@ -61,10 +49,6 @@
   }
 }
 @media (max-width: 576px) {
-  .container {
-    width: 100%;
-    padding: 0 10px;
-  }
   .footer {
     nav {
       justify-content: center;
@@ -84,10 +68,6 @@
   }
 }
 @media (max-width: 350px) {
-  .container {
-    width: 100%;
-    padding: 0 10px;
-  }
   .footer {
     nav {
       .fmenu__column {
