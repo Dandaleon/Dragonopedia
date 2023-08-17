@@ -10,10 +10,12 @@
         grid-template: 136px / repeat(4, minmax(256px, auto))
         justify-content: space-between
         list-style-type: none
+    &__cart
+        width: 100%
     &__markets
         margin-top: 36px
         display: grid
-        grid-template: minmax(490px, auto) / minmax(880px, auto) minmax(320px, auto)
+        grid-template: minmax(0, auto) / minmax(0, auto) minmax(0, auto)
         grid-auto-rows: 490px
         column-gap: 16px
     &__coin
@@ -43,7 +45,7 @@
         margin-bottom: 8px
     &__name
         display: flex
-        width: 150.41px
+        width: 20%
         padding-right: 0px
         align-items: center
         gap: 12px
@@ -61,15 +63,14 @@
         font-weight: 400
         line-height: 22.75px
         display: flex
-        width: 150.41px
+        width: 20%
         padding-right: 0px
         align-items: flex-start
         flex-shrink: 0
         line-height: 22.75px
     &__change
         display: flex
-        width: 150.41px
-        padding: 0px 83.71px 1px 0px
+        width: 20%
         align-items: flex-start
         flex-shrink: 0
         span
@@ -90,7 +91,7 @@
             line-height: 26px
     &__market
         display: flex
-        width: 150.41px
+        width: 20%
         padding-right: 0px
         justify-content: start
         align-items: flex-start
@@ -107,8 +108,7 @@
             flex-direction: column
     &__tradelink
         display: flex
-        width: 150.41px
-        padding: 0px 0.01px 0px 86.34px
+        width: 20%
         justify-content: flex-end
         align-items: center
         flex-shrink: 0

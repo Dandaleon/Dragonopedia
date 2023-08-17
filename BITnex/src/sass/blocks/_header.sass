@@ -9,12 +9,10 @@
         padding: 0 105px 0 57px
     &__navigation
         padding: 9px 0
+        width: 100%
         display: flex
-        width: 1116px
-        height: 55px
         align-items: center
-        gap: 425px
-        flex-shrink: 0
+        justify-content: space-between
     &__items
         width: 100%
         display: flex
@@ -30,6 +28,8 @@
         display: flex
         align-items: center
         justify-content: space-between
+        &-off
+            display: none
     &__menu
         width: 276px
         display: flex
@@ -37,7 +37,9 @@
         justify-content: space-between
         list-style-type: none
         &-second
-            width: 303px
+            width: 100%
+        &-off
+            display: none
     &__link
         color: #FFF
         font-family: Inter
@@ -47,6 +49,7 @@
         text-decoration: none
         cursor: pointer
         &-list
+            padding-right: 15px
             position: relative
             &::before
                 content: ""
@@ -58,11 +61,6 @@
                 border-left: 1.5px solid #7A7A85
                 left: 54px
                 top: 3px
-    &__block
-        width: 329px
-        display: flex
-        justify-content: space-between
-        align-items: center
     &__connect
         color: #94AFE5
         font-family: Inter
@@ -70,6 +68,10 @@
         font-weight: 400
         line-height: 22.75px
         cursor: pointer
+        display: flex
+        align-items: center
+        justify-content: space-between
+        width: 123px
     &__btn
         text-decoration: none
         cursor: pointer
@@ -82,5 +84,41 @@
     &__support
         display: flex
         align-items: center
+    &__burger
+        display: none
+        width: 30px
+        height: 30px
+        flex-direction: column
+        align-items: center
+        justify-content: center
+        span
+            width: 20px
+            height: 1px
+            background-color: #fff
+            &:nth-child(2)
+                margin: 5px 0
+    &__aside
+        display: flex
+        z-index: 100
+        position: fixed
+        transition: all 0.5s
+        height: 100vh
+        top: 0
+        left: -170px
+        width: 170px
+        background: rgba(0,0,0,.8)
+        &-active 
+            transition: all 0.3s 
+            left: 0
+    
+        
+
+
+            
+            
+
+    
+
+                
 
     
