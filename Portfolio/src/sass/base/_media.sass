@@ -15,11 +15,23 @@
             &-item
                 column-gap: 10px
                 grid-template-columns: 40px 195px
+    .resume
+        &__wrapper
+            padding: 0
+            column-gap: 110px
+    .skills
+        &__counters    
+            grid-template-columns: repeat(2,minmax(350px,auto))
+            grid-template-rows: repeat(3,minmax(62px,auto))
+        &__row
+            grid-template-columns: repeat(3,minmax(270px,auto))
 @media (max-width: 992px) 
     .container
         max-width: 720px 
     .title
         &_fz36
+            font-size: 30px
+        &__section-subtitle
             font-size: 30px
     .about
         &__wrapper 
@@ -31,13 +43,30 @@
             row-gap: 15px
             &-item
                 grid-template-columns: 40px auto
-            
+    .resume
+        &__wrapper
+            grid-template: repeat(2, minmax(300px, auto))  / minmax(425px, auto)
+        &__devider
+            margin-top: 10px
+    .skills
+        &__wrapper
+            row-gap: 40px
+        &__counters    
+            grid-template-columns: repeat(2,minmax(350px,auto))
+            grid-template-rows: repeat(3,minmax(62px,auto))
+            gap: 20px
+        &__row
+            padding-top: 40px
+            grid-template-columns: repeat(2,minmax(270px,auto))   
+            grid-template-rows: repeat(3,minmax(270px,auto))     
 @media (max-width: 768px)
     .container
         max-width: 540px
     .title
         &_fz48
             font-size: 28px
+        &__section-subtitle
+            font-size: 24px
     .promo
         &__title
             line-height: 39px
@@ -67,6 +96,23 @@
             &-item
                 column-gap: 10px
                 grid-template-columns: 40px 195px
+    .resume
+        padding-top: 40px
+        &__wrapper
+            row-gap: 20px
+        &__devider
+            margin-top: 0
+    .skills
+        &__wrapper
+            row-gap: 40px
+        &__counters    
+            grid-template-columns: repeat(1,minmax(300px,auto))
+            grid-template-rows: repeat(4,minmax(62px,auto))
+            gap: 20px
+        &__row
+            padding-top: 40px
+            grid-template-columns: repeat(1,minmax(270px,auto))   
+            grid-template-rows: repeat(4,minmax(270px,auto))  
 @media (max-width: 576px)
     .container
         width: 100%
@@ -74,6 +120,9 @@
     .title
         &_fz48
             font-size: 26px
+        &__section-subtitle
+            line-height: 40px
+            margin-top: 0
     .promo
         background: url("../img/main_bg.jpg") 57%/cover no-repeat
         &__btns
@@ -95,3 +144,6 @@
             row-gap: 15px
             &-item
                 grid-template-columns: 40px auto
+    .resume
+        &__wrapper
+            grid-template: repeat(2,minmax(300px,auto))/minmax(300px,auto)
