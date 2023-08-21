@@ -1,6 +1,7 @@
 const hamburger = document.querySelector(".hamburger"),
   menu = document.querySelector(".menu"),
   closeElem = document.querySelector(".menu__close");
+linkMenu = document.querySelectorAll(".menu__link");
 
 hamburger.addEventListener("click", () => {
   menu.classList.add("active");
@@ -8,6 +9,13 @@ hamburger.addEventListener("click", () => {
 
 closeElem.addEventListener("click", () => {
   menu.classList.remove("active");
+});
+
+linkMenu.forEach((item) => {
+  item.addEventListener("click", () => {
+    hamburger.classList.toggle("active");
+    menu.classList.toggle("active");
+  });
 });
 
 const counter = document.querySelectorAll(".skills__counters-percent"),
@@ -58,4 +66,30 @@ $(document).ready(function () {
   }
 
   validateForms("#contacts-form");
+
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1000) {
+      $(".pageup").fadeIn();
+    } else {
+      $(".pageup").fadeOut();
+    }
+  });
+
+  $("a").on("click", function (event) {
+    if (this.hash !== "") {
+      event.preventDefault();
+
+      const hash = this.hash;
+
+      $("html, body").animate(
+        {
+          scrollTop: $(hash).offset().top,
+        },
+        500,
+        function () {
+          window.location.hash = hash;
+        }
+      );
+    }
+  });
 });
