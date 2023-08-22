@@ -92,4 +92,20 @@ $(document).ready(function () {
       );
     }
   });
+
+  $("form").submit(function (e) {
+    e.preventDefault();
+
+    if (!$(this).valid()) {
+      return;
+    }
+
+    $.ajax({
+      type: "POST",
+      url: "mailer/smart.php",
+      data: $(this).serialize(),
+    });
+    $("form").trigger("reset");
+    return false;
+  });
 });
