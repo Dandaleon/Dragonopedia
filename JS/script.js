@@ -25,8 +25,11 @@ let movieComplete = true;
 
 function rememberMyFilms() {
   while (movieComplete === true) {
-    (movieName = prompt("Один из последних просмотренных фильмов?", "Аватар")),
-      (movieRating = prompt("На сколько оцените его?", "0"));
+    (movieName = prompt(
+      "Один из последних просмотренных фильмов?",
+      "Аватар"
+    ).trim()),
+      (movieRating = prompt("На сколько оцените его?", "0").trim());
 
     if (
       movieName != null &&
