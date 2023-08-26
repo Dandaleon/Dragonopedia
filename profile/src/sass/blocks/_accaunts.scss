@@ -1,0 +1,67 @@
+.accaunts {
+  padding-bottom: 49px;
+  min-height: 554px;
+  &__title {
+    color: #fff;
+    font-family: SF Pro Display;
+    font-size: 64px;
+    font-weight: 600;
+    line-height: 162.1%;
+    letter-spacing: -1.6px;
+  }
+  &__list {
+    max-height: 778px;
+    margin-top: 22px;
+    overflow: scroll;
+    overflow-y: hidden;
+    display: grid;
+    gap: 8px;
+    grid-template: repeat(2, 189.5px) / repeat(8, 142.5px);
+    grid-auto-columns: 142.5px;
+    grid-auto-flow: column;
+  }
+  .cart {
+    padding: 11px 14.5px 13px 11px;
+    width: 142.5px;
+    height: 189.5px;
+    flex-shrink: 0;
+    border-radius: 15px;
+    border: 1px solid rgba(255, 255, 255, 0.04);
+    background: #090e15;
+    display: flex;
+    flex-direction: column;
+    &__img {
+      border-radius: 15px;
+      background: #0a1017;
+      width: 114.5px;
+      height: 99.5px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      img {
+        width: 50%;
+      }
+    }
+    &__name {
+      margin-top: 2px;
+      color: #fff;
+      font-family: Manrope;
+      font-size: 12px;
+      font-weight: 600;
+      line-height: 162.1%;
+      letter-spacing: 0.36px;
+    }
+    .info {
+      margin-top: 8px;
+      grid-template: 51px/43px 9px;
+      column-gap: 30px;
+      &__data {
+        font-size: 10px;
+      }
+      &__text {
+        font-size: 12px;
+      }
+    }
+  }
+}
