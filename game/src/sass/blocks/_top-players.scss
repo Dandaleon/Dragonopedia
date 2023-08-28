@@ -1,0 +1,71 @@
+.top-players {
+  padding-top: 20px;
+  &__menu {
+    display: flex;
+    justify-content: space-between;
+  }
+  &__item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 70px;
+    height: 30px;
+    padding: 5px;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 500;
+    &-active {
+      background-color: #232323;
+      border-radius: 8px;
+    }
+  }
+}
+.players-list {
+  padding: 20px 5px;
+  display: grid;
+  grid-template: repeat(25, 40px) / 100%;
+  row-gap: 15px;
+  &__item {
+    display: grid;
+    grid-template: 100% / 15px 40px 100px;
+    column-gap: 10px;
+    align-items: center;
+  }
+  &__number {
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  &__icon {
+    width: 100%;
+    img {
+      width: 100%;
+      border-radius: 100%;
+    }
+    &-king {
+      position: relative;
+      &::before {
+        content: url("../icons/crown.svg");
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        right: 8px;
+        bottom: 15px;
+      }
+    }
+  }
+  &__info {
+    display: flex;
+    flex-direction: column;
+    align-self: start;
+  }
+  &__name {
+    font-size: 12px;
+    color: #fff;
+  }
+  &__profit {
+    margin-top: 5px;
+    color: #7e7e7e;
+    font-size: 10px;
+  }
+}

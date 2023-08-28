@@ -8,7 +8,43 @@
     <title>game</title>
   </head>
   <body>
-    .grade>.container>.grade
+    <div class="grade">
+      <div class="container">
+        <div class="grade__wrapper">
+          <div class="grade__top">
+            <div class="grade__icon">
+              <img src="icons/ico-gr.svg" alt="ico-gr" />
+            </div>
+            <div class="grade__title">Прокачать предприятие</div>
+          </div>
+          <div class="grade-info">
+            <div class="grade-info__text">
+              Прокачка до 26-го уровня увеличивает максимальное количество мест
+              <span>до 476</span>, максимальный уровень работников -
+              <span>до 26</span>.
+            </div>
+            <div class="grade-info__block">
+              <div class="grade-info__top">
+                <div class="grade-info__sum">83 820</div>
+                <div class="grade-info__icon">
+                  <img src="icons/block.svg" alt="block" />
+                </div>
+                <div class="grade-info__sum">41 910</div>
+                <div class="grade-info__icon">
+                  <img src="icons/defend.svg" alt="defend" />
+                </div>
+              </div>
+              <div class="grade-info__devider"></div>
+              <div class="grade-info__cost">цена прокачки</div>
+            </div>
+          </div>
+          <div class="grade__buttons">
+            <div class="grade__btn">ПРОКАЧАТЬ</div>
+            <div class="grade__btn grade__btn-close">ОТМЕНА</div>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <section class="balance">
       <div class="container">
@@ -227,32 +263,7 @@
           <div class="workers">
             <div class="workers__top">
               <div class="company__icon">
-                <svg
-                  width="64"
-                  height="65"
-                  viewBox="0 0 64 65"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M38.9199 35.03C41.9899 32.81 43.9999 29.2 43.9999 25.12C43.9999 18.37 38.5299 12.9 31.7799 12.9C25.0299 12.9 19.5599 18.37 19.5599 25.12C19.5599 29.2 21.5599 32.81 24.6399 35.03"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-miterlimit="10"
-                  />
-                  <path
-                    d="M38.92 35.03C36.91 36.48 34.44 37.34 31.78 37.34C29.11 37.34 26.65 36.48 24.64 35.03C16.81 37.54 10.77 44.07 8.95996 52.19C14.41 58.72 22.61 62.87 31.78 62.87C40.95 62.87 49.15 58.72 54.6 52.19C52.79 44.07 46.75 37.54 38.92 35.03Z"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-miterlimit="10"
-                  />
-                  <path
-                    d="M31.7801 62.87C48.4701 62.87 62.0001 49.34 62.0001 32.65C62.0001 15.9599 48.4701 2.42999 31.7801 2.42999C15.09 2.42999 1.56006 15.9599 1.56006 32.65C1.56006 49.34 15.09 62.87 31.7801 62.87Z"
-                    stroke="white"
-                    stroke-width="3"
-                    stroke-miterlimit="10"
-                  />
-                </svg>
+                <img src="icons/account-white.svg" alt="account-white" />
               </div>
               <div class="workers__info">
                 У тебя 62 работника. Поделись ссылкой, и любой безработный, кто
@@ -273,19 +284,19 @@
     <footer class="footer">
       <div class="container">
         <div class="footer__menu">
-          <div class="footer__item">
+          <a href="topPlayers.html" class="footer__item">
             <div class="footer__img">
               <img src="icons/vector.svg" alt="vector" />
             </div>
             <div class="footer__text">ТОП</div>
-          </div>
-          <div class="footer__item">
+          </a>
+          <a href="players.html" class="footer__item">
             <div class="footer__img">
               <img src="icons/account.svg" alt="account" />
             </div>
             <div class="footer__text">ИГРОКИ</div>
-          </div>
-          <div class="footer__item footer__item-active">
+          </a>
+          <a href="index2.html" class="footer__item footer__item-active">
             <div class="footer__img">
               <svg
                 width="71"
@@ -321,25 +332,25 @@
               </svg>
             </div>
             <div class="footer__text footer__text-active">ИГРА</div>
-          </div>
-          <div class="footer__item">
+          </a>
+          <a href="exchange.html" class="footer__item">
             <div class="footer__img">
               <img src="icons/exchange.svg" alt="exchange" />
             </div>
             <div class="footer__text">БИРЖА</div>
-          </div>
-          <div class="footer__item">
+          </a>
+          <a href="swap.html" class="footer__item">
             <div class="footer__img">
               <img src="icons/swap.svg" alt="swap" />
             </div>
             <div class="footer__text">ОБМЕН</div>
-          </div>
-          <div class="footer__item">
+          </a>
+          <a href="#" class="footer__item">
             <div class="footer__img">
               <img src="icons/more.svg" alt="more" />
             </div>
             <div class="footer__text">ЕЩЁ</div>
-          </div>
+          </a>
         </div>
       </div>
     </footer>

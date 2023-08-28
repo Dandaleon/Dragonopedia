@@ -5,12 +5,14 @@
     display: grid;
     grid-template: 50px / repeat(6, 50px);
     align-items: center;
+    justify-content: center;
   }
   &__item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    text-decoration: none;
     &-active {
       scale: 1.1;
     }

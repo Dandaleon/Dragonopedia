@@ -84,7 +84,7 @@
   }
   &__icon {
     display: flex;
-    width: 50px;
+    width: 40px;
     align-items: center;
     img {
       width: 40px;
@@ -104,6 +104,7 @@
   &__title {
     color: #fff;
     font-size: 14px;
+    font-weight: 400;
   }
   &__subtitle {
     color: #6ea8f2;
