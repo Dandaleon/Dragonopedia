@@ -1,5 +1,9 @@
 .footer {
+  width: 100%;
+  position: fixed;
   background-color: #1a1a1a;
+  bottom: 0;
+  border-top: 1px solid #292929;
   &__menu {
     padding: 10px 0;
     display: grid;
