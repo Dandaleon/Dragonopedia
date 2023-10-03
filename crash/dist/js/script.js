@@ -6,7 +6,8 @@ window.addEventListener("DOMContentLoaded", () => {
   let counter = 10000,
     time,
     int,
-    fac;
+    fac,
+    scrolling;
 
   function gameStart() {
     timer.classList.toggle("off");
@@ -26,9 +27,11 @@ window.addEventListener("DOMContentLoaded", () => {
         timer.classList.toggle("off");
         scale.classList.toggle("off");
 
-        document.querySelector(".rocket").style = "bottom: 23px;";
+        document.querySelector(".rocket").style.cssText =
+          "bottom: 23px; animation: shakeShip 0.2s infinite;";
         gameTimer();
         gameScale();
+        gameScroll();
       }
     }, tick);
   }
@@ -77,7 +80,7 @@ window.addEventListener("DOMContentLoaded", () => {
     const facto = document.querySelector("#factor"),
       sc = document.querySelectorAll(".scale");
     let t = 100,
-      s = 150,
+      s = 50,
       fl = 0,
       res = 0;
 
@@ -97,23 +100,27 @@ window.addEventListener("DOMContentLoaded", () => {
       }
 
       if (res >= 10) {
-        s = 25;
+        s = 10;
         sc.forEach((item) => {
           item.classList.remove("green");
           item.classList.add("gold");
-          document.querySelector(".scale").style = "width: 160px";
+          document.querySelector(".scale").style = "width: 175px";
+          if (res >= 100) {
+            document.querySelector(".scale").style = "width: 190px";
+          }
         });
       } else if (res >= 5) {
-        s = 50;
+        s = 20;
         sc.forEach((item) => {
           item.classList.remove("blue");
           item.classList.add("green");
         });
       } else if (res >= 2) {
-        s = 100;
+        s = 35;
         sc.forEach((item) => {
           item.classList.remove("gray");
           item.classList.add("blue");
+          document.querySelector(".scale").style = "width: 145px";
         });
       }
 
@@ -122,9 +129,17 @@ window.addEventListener("DOMContentLoaded", () => {
       fac = setTimeout(set, s);
     }, s);
   }
-  gameStart();
+  function gameScroll() {
+    let scroll = 0;
+
+    scrolling = setInterval(() => {
+      document.querySelector(".canvas").style = `bottom: ${scroll}px`;
+      scroll--;
+    }, 1);
+  }
 
   function stopTimer(t) {
     clearInterval(t);
   }
+  gameStart();
 });
