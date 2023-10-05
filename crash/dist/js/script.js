@@ -2,16 +2,33 @@ window.addEventListener("DOMContentLoaded", () => {
   const scale = document.querySelector(".block-left"),
     timer = document.querySelector(".block-right"),
     countdown = document.querySelector("#caunt"),
+    roket = document.querySelector(".rocket"),
     tick = 1000;
+
   let counter = 10000,
+    scroll = 0,
     time,
     int,
     fac,
-    scrolling;
+    scrolling,
+    minute = 0,
+    second = 5,
+    money = 0,
+    players = 0,
+    value = 0;
 
   function gameStart() {
-    timer.classList.toggle("off");
-    scale.classList.toggle("off");
+    scroll = 0;
+    money = 0;
+    value = 0;
+    document.querySelector("#player").textContent = 0;
+
+    document.querySelector(".canvas").style = `bottom: ${scroll}px`;
+    document
+      .querySelector(".rocket-explosion")
+      .classList.remove("rocket-explosion-crash");
+    roket.classList.remove("fly-rocket");
+    roket.style = "opacity: 1";
 
     int = setInterval(() => {
       counter <= 10000
@@ -27,22 +44,20 @@ window.addEventListener("DOMContentLoaded", () => {
         timer.classList.toggle("off");
         scale.classList.toggle("off");
 
-        document.querySelector(".rocket").style.cssText =
-          "bottom: 23px; animation: shakeShip 0.2s infinite;";
-        gameTimer();
+        roket.classList.add("fly-rocket");
+        setTimeout(() => {
+          roket.style.cssText =
+            "bottom: 23px;animation: shakeShip 0.2s infinite; ";
+        }, 1000);
+
+        gameTimer(minute, second);
         gameScale();
         gameScroll();
       }
     }, tick);
   }
-  function gameReload() {
-    timer.classList.toggle("off");
-    scale.classList.toggle("off");
 
-    setTimeout(gameStart, 1000);
-  }
-
-  function gameTimer() {
+  function gameTimer(minut, secon) {
     const sec = document.querySelector("#sec");
     const min = document.querySelector("#min");
 
@@ -61,12 +76,18 @@ window.addEventListener("DOMContentLoaded", () => {
           : (min.textContent = `${m / 1000}`);
       }
 
-      if (m === 1000 && s === 20000) {
-        stopTimer();
-        // sec.textContent = `00`;
-        // min.textContent = `00`;
+      if (m === minut * 1000 && s === secon * 1000) {
+        document
+          .querySelector(".rocket-explosion")
+          .classList.add("rocket-explosion-crash");
+        stopTimer(time);
+        stopTimer(fac);
+        stopTimer(scrolling);
 
-        // gameReload();
+        roket.style = "";
+        roket.style.cssText = "opacity: 0;bottom:-160px";
+
+        setTimeout(gameReload, 3000);
       }
 
       s += tick;
@@ -76,6 +97,7 @@ window.addEventListener("DOMContentLoaded", () => {
       }
     }, tick);
   }
+
   function gameScale() {
     const facto = document.querySelector("#factor"),
       sc = document.querySelectorAll(".scale");
@@ -129,8 +151,9 @@ window.addEventListener("DOMContentLoaded", () => {
       fac = setTimeout(set, s);
     }, s);
   }
+
   function gameScroll() {
-    let scroll = 0;
+    scroll = 0;
 
     scrolling = setInterval(() => {
       document.querySelector(".canvas").style = `bottom: ${scroll}px`;
@@ -141,5 +164,55 @@ window.addEventListener("DOMContentLoaded", () => {
   function stopTimer(t) {
     clearInterval(t);
   }
+
+  function gameReload() {
+    setTimeout(() => {
+      timer.classList.toggle("off");
+      scale.classList.toggle("off");
+
+      sec.textContent = `00`;
+      min.textContent = `00`;
+
+      countdown.parentElement.parentElement.style = "opacity: 1";
+      gameStart();
+
+      document.querySelector("#bets").textContent = `0.00`;
+    }, 1000);
+  }
   gameStart();
+
+  document.querySelector("#play").addEventListener("click", () => {
+    const playerBid = document.querySelector("#bid-player"),
+      bet = document.querySelector("#bets");
+
+    if (+playerBid.value !== 0) {
+      let i = playerBid.value;
+      if (i > 100) {
+        let inco = setInterval(() => {
+          bet.textContent = `${value}.00`;
+
+          if (money == +i) {
+            clearInterval(inco);
+            money = 0;
+          }
+          value++;
+          money++;
+        }, 0.1);
+      } else {
+        let inco = setInterval(() => {
+          bet.textContent = `${value}.00`;
+
+          if (money == +i) {
+            clearInterval(inco);
+            money = 0;
+          }
+          value++;
+          money++;
+        }, 30);
+      }
+      playerBid.value = "";
+      players++;
+      document.querySelector("#player").textContent = players;
+    }
+  });
 });
