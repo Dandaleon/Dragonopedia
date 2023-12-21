@@ -275,13 +275,19 @@ document.addEventListener("DOMContentLoaded", () => {
 
         let isActive = element.classList.contains("on");
 
-        if (isActive) {
-          bgTableElement.style.paddingTop = "";
-        } else {
+        let screenWidth = window.innerWidth;
+        if (screenWidth < 640) {
           let count = `${
             targetContainer.getAttribute("data-count") * 50 + 50
           }px`;
-          bgTableElement.style.cssText = `padding-top:${count}`;
+          console.log(count);
+          targetContainer.style.cssText = `padding-top:${count}`;
+        } else if (screenWidth < 768) {
+          let count = `${
+            targetContainer.getAttribute("data-count") * 50 + 50
+          }px`;
+          console.log(count);
+          targetContainer.style.cssText = `padding-top:${count}`;
         }
       });
 
@@ -298,10 +304,6 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       if (targetContainer) {
         targetContainer.classList.add("on");
-
-        let count = `${targetContainer.getAttribute("data-count") * 50 + 50}px`;
-        console.log(count);
-        targetContainer.style.cssText = `padding-top:${count}`;
       }
     });
   });
