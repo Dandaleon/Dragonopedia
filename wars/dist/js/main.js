@@ -109,24 +109,63 @@ document.addEventListener("DOMContentLoaded", () => {
     gameFocus = document.querySelector(".header-game__list");
 
   skipRight.addEventListener("click", () => {
-    gameFocus.style.cssText = "margin-left: -130px;";
+    gameFocus.classList.add("scroll-right");
+    gameFocus.classList.remove("scroll-left");
     setTimeout(() => {
       skipLeft.classList.toggle("off");
       skipRight.classList.toggle("off");
-    }, 500);
+    }, 200);
   });
   skipLeft.addEventListener("click", () => {
-    gameFocus.style.cssText = "margin-left: 80px;";
+    gameFocus.classList.add("scroll-left");
+    gameFocus.classList.remove("scroll-right");
     setTimeout(() => {
       skipLeft.classList.toggle("off");
       skipRight.classList.toggle("off");
-    }, 500);
+    }, 200);
   });
+
+  //
+  const skipServiceRight = document.querySelector(".header-service__right"),
+    skipServiceLeft = document.querySelector(".header-service__left"),
+    serviceFocus = document.querySelector(".header-service__list");
+
+  skipServiceRight.addEventListener("click", () => {
+    serviceFocus.classList.add("scroll-right-service");
+    serviceFocus.classList.remove("scroll-left-service");
+    setTimeout(() => {
+      skipServiceLeft.classList.toggle("off");
+      skipServiceRight.classList.toggle("off");
+    }, 200);
+  });
+  skipServiceLeft.addEventListener("click", () => {
+    serviceFocus.classList.add("scroll-left-service");
+    serviceFocus.classList.remove("scroll-right-service");
+    setTimeout(() => {
+      skipServiceLeft.classList.toggle("off");
+      skipServiceRight.classList.toggle("off");
+    }, 200);
+  });
+  //
 
   const gameSelect = document.querySelector(".header-list__games"),
     serviceSelect = document.querySelector(".header-list__services"),
     gameBlock = document.querySelector(".header-game"),
-    serviceBlock = document.querySelector(".header-service");
+    serviceBlock = document.querySelector(".header-service"),
+    borderGameClose = document.querySelector(".header-game__border"),
+    borderServiceClose = document.querySelector(".header-service__border");
+
+  borderGameClose.addEventListener("click", () => {
+    serviceSelect.classList.remove("active");
+    gameSelect.classList.remove("active");
+    gameBlock.classList.remove("header-game-open");
+  });
+
+  borderServiceClose.addEventListener("click", () => {
+    serviceSelect.classList.remove("active");
+    gameSelect.classList.remove("active");
+    serviceBlock.classList.remove("header-service-open");
+  });
 
   gameSelect.addEventListener("click", () => {
     gameSelect.classList.toggle("active");
@@ -151,8 +190,35 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
+  const headerContentElements = document.querySelectorAll(
+    ".header-game__content"
+  );
+
   listGame.forEach((item) => {
     item.addEventListener("click", () => {
+      headerContentElements.forEach(function (element) {
+        const targetIndex = item.getAttribute("data-target");
+        document
+          .querySelectorAll(".header-game__content")
+          .forEach((container) => container.classList.remove("on"));
+
+        const targetContainer = document.querySelector(
+          `.header-game__content[data-index="${targetIndex}"]`
+        );
+        let bgTableElement = element.querySelector(".header-game__bg-table");
+
+        let isActive = element.classList.contains("on");
+
+        if (isActive) {
+          bgTableElement.style.paddingTop = "";
+        } else {
+          let count = `${
+            targetContainer.getAttribute("data-count") * 50 + 50
+          }px`;
+          bgTableElement.style.cssText = `padding-top:${count}`;
+        }
+      });
+
       listGame.forEach((li) => li.classList.remove("active"));
       item.classList.add("active");
 
@@ -164,6 +230,17 @@ document.addEventListener("DOMContentLoaded", () => {
       const targetContainer = document.querySelector(
         `.header-game__content[data-index="${targetIndex}"]`
       );
+      targetContainer.style.cssText = "";
+      let screenWidth = window.innerWidth;
+      if (screenWidth < 640) {
+        let count = `${targetContainer.getAttribute("data-count") * 50 + 50}px`;
+        console.log(count);
+        targetContainer.style.cssText = `padding-top:${count}`;
+      } else if (screenWidth < 768) {
+        let count = `${targetContainer.getAttribute("data-count") * 50 + 50}px`;
+        console.log(count);
+        targetContainer.style.cssText = `padding-top:${count}`;
+      }
       if (targetContainer) {
         targetContainer.classList.add("on");
       }
@@ -173,7 +250,9 @@ document.addEventListener("DOMContentLoaded", () => {
   //service
 
   const listGameService = document.querySelectorAll(".header-service__list li");
-
+  const headerContentElementsService = document.querySelectorAll(
+    ".header-service__content"
+  );
   listGameService.forEach((item) => {
     item.addEventListener("click", () => {
       listGameService.forEach((li) => li.classList.remove("active"));
@@ -183,6 +262,29 @@ document.addEventListener("DOMContentLoaded", () => {
 
   listGameService.forEach((item) => {
     item.addEventListener("click", () => {
+      headerContentElementsService.forEach(function (element) {
+        const targetIndex = item.getAttribute("data-target-service");
+        document
+          .querySelectorAll(".header-service__content")
+          .forEach((container) => container.classList.remove("on"));
+
+        const targetContainer = document.querySelector(
+          `.header-service__content[data-index-service="${targetIndex}"]`
+        );
+        let bgTableElement = element.querySelector(".header-service__bg-table");
+
+        let isActive = element.classList.contains("on");
+
+        if (isActive) {
+          bgTableElement.style.paddingTop = "";
+        } else {
+          let count = `${
+            targetContainer.getAttribute("data-count") * 50 + 50
+          }px`;
+          bgTableElement.style.cssText = `padding-top:${count}`;
+        }
+      });
+
       listGameService.forEach((li) => li.classList.remove("active"));
       item.classList.add("active");
 
@@ -196,7 +298,32 @@ document.addEventListener("DOMContentLoaded", () => {
       );
       if (targetContainer) {
         targetContainer.classList.add("on");
+
+        let count = `${targetContainer.getAttribute("data-count") * 50 + 50}px`;
+        console.log(count);
+        targetContainer.style.cssText = `padding-top:${count}`;
       }
     });
   });
+
+  function checkScreenSize() {
+    let screenWidth = window.innerWidth;
+    if (screenWidth < 768) {
+      const listGame = document.querySelectorAll(".header-game__content"),
+        listService = document.querySelectorAll(".header-service__content");
+      let i = 0,
+        j = 0;
+      listGame.forEach((item) => {
+        item.dataset.count = i;
+        i++;
+      });
+      listService.forEach((item) => {
+        item.dataset.count = j;
+        j++;
+      });
+    }
+  }
+
+  window.addEventListener("resize", checkScreenSize);
+  checkScreenSize();
 });
