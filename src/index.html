@@ -3,20 +3,30 @@
   <head>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/slick.css">
     <link rel="stylesheet" href="css/style.min.css"/>
     <link rel="stylesheet" href="css/fonts.min.css"/>
     <title>Dragonopedia</title>
   </head>
   <body>
+    <div class="btn-up btn-up_hide"></div>
     <header>
       <h1>Dragonopedia</h1>
-      <a href="#promo">Описание</a>
+      <nav>
+        <article>
+          <a href="#promo">Описание</a>
+        </article>
+        <article>
+            <a href="#carousel">Карусель</a>
+        </article>
+      </nav>
     </header>
 
     <main>
       <div class="background">
         <img class="bgimg" src="img/NoobAndPro.gif" alt="GifFriends" />
       </div>
+      
       <section id="promo">
         <p>
           Сайт Драконопедия разрабатывается двумя front-end разработчиками со
@@ -47,7 +57,30 @@
           <p class="dandaleon__text">Dandaleon</p>
         </a>
       </section>
+
+      <section id="carousel">
+        <div class="container">
+            <div class="carousel__inner">
+                <div>
+                    <img src="icons/slide_1.png" alt="">
+                </div>
+                <div>
+                    <img src="icons/slide_2.png" alt="">
+                </div>
+                <div>
+                    <img src="icons/slide_3.png" alt="">
+                </div>
+            </div>
+        </div>
+    </section>
+    
     </main>
+    
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script src="js/slick.min.js"></script>
     <script src="js/script.js"></script>
+    <script src="js/carousel.js"></script>
   </body>
 </html>

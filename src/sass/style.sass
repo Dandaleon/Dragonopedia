@@ -2,6 +2,30 @@
     font-family: 'UnifrakturMaguntia-Regular'
 html
     scroll-behavior: smooth
+    overflow-y: hidden
+.btn-up
+  position: fixed
+  background-color: #00ffff
+  right: 20px
+  bottom: 20px
+  border-radius: 22px
+  cursor: pointer
+  width: 44px
+  height: 44px
+
+.btn-up::before
+  content: ""
+  text-align: center
+  position: absolute
+  width: 20px
+  height: 20px
+  left: 12px
+  top: 12px
+  background: url("../icons/arrow_up.png") center (center/cover) no-repeat
+
+.btn-up_hide
+  display: none
+  
 body
     margin: 0px
 header
@@ -14,16 +38,32 @@ header
         font-size: 50px
         margin-bottom: 20px
     a
-        color: #000
+        color: #fff
         text-decoration-line: none
         font-size: 20px
         margin-bottom: 15px
+    nav 
+        display: flex
+        justify-content: center
+        align-items: center
+        background-color: black
+        width: 100%
+        margin-bottom: 15px
+        article a
+            background-color: black
+            font-weight: bold
+            width: 200px
+            height: 30px
+            border: 0px
+            font-size: 20px
+            text-decoration-line: none
+            color: white
+            margin-right: 25px
 main
     position: relative
-    height: 870px
+    height: 850px
     .background
         position: absolute
-        top: 0px
         width: 100%
         height: 100%
         background-color: rgba(0,0,0,0.5)
@@ -32,6 +72,24 @@ main
             height: 100%
             position: relative
             z-index: -10
+    #carousel
+        padding: 70px 0
+        .carousel__inner
+            position: relative
+            width: 500px
+            margin: 0 auto
+        .slick-prev, .slick-next
+            position: absolute
+            top: 50%
+            transform: translate(-50%)
+            left: -66px
+            border: none
+            img
+                width: 31px
+                height: 50px
+        .slick-next
+            left: auto
+            right: -66px
     #promo
         background:#000
         opacity: 0.5
@@ -119,3 +177,4 @@ main
        box-shadow: 0 0 #ffffff
     100%
         box-shadow: 0 0 0 20px rgba(255, 255, 255, 0)
+
