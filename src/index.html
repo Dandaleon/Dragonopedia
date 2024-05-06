@@ -8,12 +8,12 @@
 		<link rel="stylesheet" href="css/fonts.min.css"/>
 		<title>Dragonopedia</title>
 	</head>
-	<body>
+	<body class="page">
 		<header>
 			<h1>Dragonopedia</h1>
 			<nav>
 			<article>
-				<a href="#promo">Описание</a>
+				<a href="#promo-nav">Описание</a>
 			</article>
 			<article>
 				<a href="#carousel">Карусель</a>
@@ -27,7 +27,7 @@
 			<section class="variability">
 				<div class="container">
 					<h3 class="variability__name">Дизайн двух авторов</h3>
-					<div id="promo">
+					<div class="variability__promo" id="promo-nav">
 						<p>
 							Сайт Драконопедия разрабатывается двумя front-end разработчиками со
 							разной стилистикой работы.
@@ -56,7 +56,7 @@
 				<p class="dandaleon__text">Dandaleon</p>
 			</a>
 
-			<section id="carousel">
+			<section class="carousel" id="carousel-nav">
 				<div class="container">
 					<div class="carousel__inner">
 						<div>
@@ -72,17 +72,48 @@
 				</div>
 			</section>
 
-			<section id="minigames">
+			<section class="minigames" id="minigames-nav">
 				<div class="container">
-					<div class="minigames__content">
-						<div class="minigames-quest">
-							
+					<p class="minigames__quest">
+						Lorem ipsum dolor sit amet consectetur adipisicing elit. Totam impedit, inventore obcaecati eum numquam est reprehenderit aliquam nulla nemo enim error! Debitis nostrum quasi tempora, magni autem eius modi veritatis!
+					</p>
+					<div class="minigames__img">
+						<div class="minigames__img-window">
+							<img src="img/NoobAndPro.gif" alt="img">
 						</div>
-						<div class="minigames-img">
-
+					</div>
+					<div class="minigames-answer">
+						<div class="minigames-answer__variant">
+							<p class="minigames-answer__variant-name">
+								A:
+							</p>
+							<p class="minigames-answer__variant-A">
+								lorem deus vult
+							</p>
 						</div>
-						<div class="minigames-answer">
-
+						<div class="minigames-answer__variant">
+							<p class="minigames-answer__variant-name">
+								B:
+							</p>
+							<p class="minigames-answer__variant-B">
+								lorem deus vult
+							</p>
+						</div>
+						<div class="minigames-answer__variant">
+							<p class="minigames-answer__variant-name">
+								C:
+							</p>
+							<p class="minigames-answer__variant-C">
+								lorem deus vult
+							</p>
+						</div>
+						<div class="minigames-answer__variant">
+							<p class="minigames-answer__variant-name">
+								D:
+							</p>
+							<p class="minigames-answer__variant-D">
+								lorem deus vult
+							</p>
 						</div>
 					</div>
 				</div>
@@ -96,5 +127,6 @@
 		<script src="js/slick.min.js"></script>
 		<script src="js/script.js"></script>
 		<script src="js/carousel.js"></script>
+		<script src="js/minigames.js"></script>
 	</body>
 </html>
