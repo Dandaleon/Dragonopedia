@@ -1,0 +1,8 @@
+<!DOCTYPE html><html lang="en"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Document</title><link rel="stylesheet" href="css/style.min.css"></head><body><p id="text">Шаласть удалась</p><script>let item = document.querySelector("#text"),
+        opacity = 0;
+      let fadeIn = setInterval(getOpacity, 50);
+      function getOpacity() {
+        opacity >= 1 ? clearInterval(fadeIn) : (opacity += 0.1);
+        item.style.cssText = `color: rgba(255, 255, 255, ${opacity})`;
+        return opacity;
+      }</script></body></html>

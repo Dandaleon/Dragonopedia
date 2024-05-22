@@ -1,0 +1,31 @@
+<svg width="36.000000" height="36.000000" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_7_444_dd" x="0.000000" y="0.000000" width="36.000000" height="36.000000" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="4"/>
+			<feGaussianBlur stdDeviation="1.33333"/>
+			<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.25 0"/>
+			<feBlend mode="normal" in2="shape" result="effect_innerShadow_1"/>
+		</filter>
+		<clipPath id="clip7_444">
+			<rect id="Frame 12138262" rx="3.000000" width="35.000000" height="35.000000" transform="translate(0.500000 0.500000)" fill="white" fill-opacity="0"/>
+		</clipPath>
+		<linearGradient id="paint_linear_7_444_0" x1="18.000000" y1="0.000000" x2="18.000000" y2="7.411765" gradientUnits="userSpaceOnUse">
+			<stop stop-color="#FFFFFF" stop-opacity="0.501961"/>
+			<stop offset="1.000000" stop-color="#FFFFFF" stop-opacity="0.000000"/>
+		</linearGradient>
+	</defs>
+	<g filter="url(#filter_7_444_dd)">
+		<rect id="Frame 12138262" rx="3.000000" width="35.000000" height="35.000000" transform="translate(0.500000 0.500000)" fill="#F7931A" fill-opacity="1.000000"/>
+		<g clip-path="url(#clip7_444)">
+			<path id="Vector" d="M24.9608 16.0402C25.2729 13.9387 23.6844 12.809 21.5124 12.0554L22.217 9.20868L20.4966 8.77692L19.8107 11.5486C19.3584 11.4351 18.894 11.328 18.4323 11.2219L19.1232 8.43176L17.4039 8L16.6989 10.8458C16.3246 10.7599 15.957 10.6751 15.6004 10.5858L15.6024 10.5768L13.2299 9.98004L12.7723 11.8309C12.7723 11.8309 14.0487 12.1255 14.0218 12.1437C14.7184 12.3188 14.8444 12.7834 14.8235 13.1516L14.0209 16.3947C14.0688 16.4069 14.1311 16.4247 14.1997 16.4525C14.1423 16.4381 14.0813 16.4224 14.0179 16.4072L12.8928 20.9502C12.8077 21.1634 12.5916 21.4833 12.1045 21.3619C12.1218 21.387 10.8541 21.0475 10.8541 21.0475L10 23.0311L12.2388 23.5933C12.6553 23.6985 13.0634 23.8086 13.4654 23.9121L12.7535 26.7914L14.4718 27.2233L15.1769 24.3745C15.6463 24.5028 16.1019 24.6212 16.5479 24.7328L15.8452 27.5682L17.5657 28L18.2775 25.126C21.2111 25.6853 23.417 25.4598 24.3455 22.787C25.0936 20.6352 24.3082 19.394 22.7649 18.5847C23.889 18.3235 24.7351 17.5786 24.9608 16.0402ZM21.0301 21.592C20.4985 23.7439 16.9015 22.5807 15.7353 22.289L16.6801 18.4743C17.8462 18.7676 21.5857 19.3478 21.0301 21.592ZM21.5622 16.009C21.0772 17.9664 18.0834 16.9719 17.1123 16.7281L17.9688 13.2684C18.9399 13.5123 22.0673 13.9673 21.5622 16.009Z" fill="#FFFFFF" fill-opacity="1.000000" fill-rule="nonzero"/>
+		</g>
+	</g>
+	<rect id="Frame 12138262" rx="3.000000" width="35.000000" height="35.000000" transform="translate(0.500000 0.500000)" stroke="url(#paint_linear_7_444_0)" stroke-opacity="1.000000" stroke-width="1.000000" style=""/>
+</svg>

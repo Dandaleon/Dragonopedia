@@ -1,0 +1,19 @@
+<svg width="28.051086" height="20.466675" viewBox="0 0 28.0511 20.4667" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+	<desc>
+			Created with Pixso.
+	</desc>
+	<defs>
+		<filter id="filter_7_2_dd" x="0.000000" y="0.000000" width="28.051086" height="20.466675" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+			<feFlood flood-opacity="0" result="BackgroundImageFix"/>
+			<feBlend mode="normal" in="SourceGraphic" in2="BackgroundImageFix" result="shape"/>
+			<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
+			<feOffset dx="0" dy="2"/>
+			<feGaussianBlur stdDeviation="0.666667"/>
+			<feComposite in2="hardAlpha" operator="arithmetic" k2="-1" k3="1"/>
+			<feColorMatrix type="matrix" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 0.47 0"/>
+			<feBlend mode="normal" in2="shape" result="effect_innerShadow_1"/>
+		</filter>
+	</defs>
+	<g filter="url(#filter_7_2_dd)"/>
+	<path id="Icon" d="M14.0256 0.900024C20.8322 0.900024 25.2987 6.90649 26.7993 9.28247C26.9808 9.56995 27.0717 9.71375 27.1225 9.93542C27.1606 10.1021 27.1606 10.3647 27.1225 10.5312C27.0717 10.7529 26.9808 10.8967 26.7993 11.1842C25.2987 13.5602 20.8322 19.5667 14.0256 19.5667C7.21887 19.5667 2.75238 13.5602 1.25183 11.1842C1.07025 10.8967 0.979492 10.7529 0.92865 10.5312C0.890503 10.3647 0.890503 10.1021 0.92865 9.93542C0.979492 9.71375 1.07025 9.56995 1.25183 9.28247C2.75238 6.90649 7.21887 0.900024 14.0256 0.900024ZM14.0256 14.2334C11.8164 14.2334 10.0256 12.4425 10.0256 10.2334C10.0256 8.02417 11.8164 6.2334 14.0256 6.2334C16.2347 6.2334 18.0256 8.02417 18.0256 10.2334C18.0256 12.4425 16.2347 14.2334 14.0256 14.2334Z" stroke="#52C5FA" stroke-opacity="1.000000" stroke-width="1.800000" stroke-linejoin="round"/>
+</svg>
