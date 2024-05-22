@@ -1,0 +1,108 @@
+.minigames
+   display: flex
+   justify-content: center
+   background:#000
+   background-color: rgba(0,0,0,0.5)
+   color: rgba(255, 255, 255, 1)
+   height: 750px
+   width: 100%
+   
+
+   &-property
+      padding: 0
+      border: 0
+      font-size: 100%
+      vertical-align: baseline
+      width: 100%
+      height: 100%
+      display: flex
+      flex-flow: column nowrap
+      position: relative
+      margin: 0 auto
+      max-width: 1200px
+      &-levels
+         margin: 0
+         border: 0
+         vertical-align: baseline
+         position: relative
+         padding: 0 1%
+         width: 100%
+         height: 100%
+         display: flex
+         flex-flow: row wrap
+         align-content: flex-start
+         justify-content: center
+         &__levelHead
+            padding: 0
+            border: 0
+            vertical-align: baseline
+            width: 700px
+            text-align: center
+            font-size: 72px
+         &-Names
+            margin: 0
+            padding: 0
+            border: 0
+            font-size: 100%
+            font-family: inherit
+            vertical-align: baseline
+            position: absolute
+            width: 100%
+            top: 50%
+            transform: translateY(-50%)
+            &__level
+               vertical-align: baseline
+               display: flex
+               justify-content: center
+               align-items: center
+               text-align: center
+               font-size: 25px
+               background-color: #000000
+               border: #b9b9b9 3px solid
+               margin: 5px auto 30px auto
+               height: 100px
+               padding: 10px
+               cursor: pointer
+               border-radius: 50px
+               width: 400px
+            &__level:hover 
+               transform: scale(0.99)
+
+            &__level:active 
+               transform: scale(0.98)
+
+   &-content
+      display: none
+      &__quest
+         text-align: center
+         font-size: 25px
+         width: 1200px
+         border: 2px solid #b9b9b9
+         border-radius: 25px
+         margin: 0 auto
+      &-img
+         display: flex
+         justify-content: center
+         align-items: center
+         height: 500px
+      &-answer
+         display: flex
+         flex-direction: column
+         flex-wrap: wrap
+         align-content: space-around
+         width: 1000px
+         height: 150px
+         margin: 0 auto
+         &__variant
+            display: flex
+            align-items: center
+            justify-content: center
+            width: 500px
+            height: 50px
+            border: 2px solid #b9b9b9
+            border-radius: 25px
+            margin: 15px 10px 0 10px
+            background-color: #000
+            font-size: 20px
+            &-name
+               margin-right: 15px
